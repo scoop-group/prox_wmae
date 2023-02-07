@@ -1,18 +1,20 @@
 """ 
-    This function implements the proximal map of the weighted mean absolute
-    error function, see Algorithm 1 in 
+This function implements the proximal map of the weighted mean absolute
+error function, see Algorithm 1 in 
 
-    Baumgärtner, Herzog, Schmidt, Weiß: The Proximal Map of the Weighted Mean Absolute Error
+  Baumgärtner, Herzog, Schmidt, Weiß
+  The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
-    Equation numbers in the comments refer to this publication.
+Equation numbers in the comments refer to this publication.
 
-    This function depends on numpy.
+This function depends on numpy.
 
-    .. code: 
+.. code: 
 
-      pip3 install numpy
+  pip3 install numpy
 
-    See demo_prox_wmae.py and demo_cameraman.py for demonstrations.
+See `demo_prox_wmae.py` and demo_cameraman.py for demonstrations.
 
 """
 

@@ -1,6 +1,8 @@
 """ 
 This script realizes the numerical minimization of the deflection energy, as presented in Section 5 in the paper
-    Baumgärtner, Herzog, Schmidt, Weiß: The Proximal Map of the Weighted Mean Absolute Error
+  Baumgärtner, Herzog, Schmidt, Weiß: 
+  The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
 Equation numbers in the comments refer to this publication.
 This script exports the optimal deflection y of the 2 domains :math:`\\Omega_1` and :math:`\\Omega_2` into the files "Omega_1.xdmf" and "Omega_2.xdmf".

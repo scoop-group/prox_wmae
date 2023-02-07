@@ -3,6 +3,8 @@ This scripts renders all example plots for the paper
 
   Baumgärtner, Herzog, Schmidt, Weiß
   The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
+ 
 """
 import os
 import demo_cameraman

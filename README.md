@@ -2,6 +2,7 @@ This repository contains code corresponding to the paper
 
   Baumgärtner, Herzog, Schmidt, Weiß
 	The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
 * The file `prox_wmae.py` contains a vectorized implementation of Algorithm 1 in the paper. 
 * The file `demo_prox_wmae.py` demonstrates a simple call of this algorithm. 

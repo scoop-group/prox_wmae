@@ -3,8 +3,9 @@ This script demonstrates the use of the proximal map of the weighted mean
 absolute error function in a total-variation image denoising problem. It
 implements Algorithm 2 in
 
-Baumgärtner, Herzog, Schmidt, Weiß
-The Proximal Map of the Weighted Mean Absolute Error
+  Baumgärtner, Herzog, Schmidt, Weiß
+  The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
 Equation numbers in the comments refer to this publication.
 The algorithm operates on cameraman_noisy.png and outputs cameraman_result.png. 

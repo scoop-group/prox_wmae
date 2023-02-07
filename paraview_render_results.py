@@ -1,7 +1,9 @@
 """ This module renders the resulting deflection results using pvpython (paraview) and exports them into .png-files. 
 
 This imports the solutions generated in "demo_deflection.py" and renders the images in Figure (5.1) in the corresponding paper
-    Baumgärtner, Herzog, Schmidt, Weiß: The Proximal Map of the Weighted Mean Absolute Error
+  Baumgärtner, Herzog, Schmidt, Weiß
+  The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
 The rendered images are stored into the files "deflection_disk.png" and "deflection_L.png". 
 

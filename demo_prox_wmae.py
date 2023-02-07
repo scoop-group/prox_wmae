@@ -4,6 +4,7 @@ of the weighted mean absolute error function prox_wmae.py, see Algorithm 1 in
 
   Baumgärtner, Herzog, Schmidt, Weiß
   The Proximal Map of the Weighted Mean Absolute Error
+  arxiv: [2209.13545](https://arxiv.org/abs/2209.13545)
 
 This function depends on numpy.
 
