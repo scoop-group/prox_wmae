@@ -60,7 +60,7 @@ def render_result(function , data_file, export_file):
     warpDisplay.ColorArrayName = ['POINTS', function]
     warp.ScaleFactor = 10
     warpDisplay.SetScalarBarVisibility(renderView,False)
-    # set colorspace to represent steps defined in demo_deflection.py
+    # set colorspace to represent thresholds defined in demo_deflection.py
     # define step colors
     colors = [[0,119,187],[51,187,238],[0,153,136],[238,119,51],[204,51,17]]
     # define step-heights d^i 
@@ -77,6 +77,21 @@ def render_result(function , data_file, export_file):
     LUT.ColorSpace = 'Step'
     LUT.RGBPoints = rgb_points
     LUT.AboveRangeColor = colors[-1]
+    # add annotations for color legend in flat tuple of corresponding values followed by their annotation in the legend
+    ScalarBar = pv.GetScalarBar(LUT, renderView)
+    LUT.Annotations = ['0', '$0$', '0.01', '$0.01 = d_1$', '0.02', '$0.02 = d_2$', '0.03', '$0.03 = d_3$','0.04', '$0.04 = d_4$',]
+    ScalarBar.Title = '$z$'
+    ScalarBar.ComponentTitle = ''
+    ScalarBar.WindowLocation = 'Upper Right Corner'
+    ScalarBar.TitleColor = [0.0, 0.0, 0.0]
+    ScalarBar.TitleFontSize = 32
+    ScalarBar.LabelColor = [0.0, 0.0, 0.0]
+    ScalarBar.LabelFontSize = 32
+    ScalarBar.AutomaticLabelFormat = 0
+    ScalarBar.DrawTickMarks = 0
+    ScalarBar.DrawTickLabels = 0
+    ScalarBar.AddRangeLabels = 0
+    ScalarBar.TextPosition = 'Ticks left/bottom, annotations right/top'
     renderView.Update()
     # adapt camera position
     layout.SetSize(1826, 1088) # (3652,2176)
@@ -89,6 +104,6 @@ def render_result(function , data_file, export_file):
     pv.SaveScreenshot(export_file, renderView, ImageResolution=[3652, 2176], TransparentBackground=1)
     return
 
-if __name__ == '__main__': 
+if __name__ == '__main__' or True: 
     render_result("z","Omega_1.xdmf",os.getcwd()+'/deflection_disk.png')
     render_result("z","Omega_2.xdmf",os.getcwd()+'/deflection_L.png')
